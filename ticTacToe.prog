@@ -1,0 +1,24 @@
+; tic tac toe program in calculator when split into different programs
+
+; Prog 0: Main driver program
+9→J:Lbl 1:0→A[J-1]:Dsz J:Goto 1:9→M:0→S:Prog 2:Lbl 2:Prog 3:S=0⇒Goto 3:0→S:Prog 4:Goto 4:Lbl 3:1→S:Prog 5:Lbl 4:Dsz M:Goto 2:
+
+; Prog 1: Draws a vertical line from (X, -22) to (X, 0)
+J→X:-22→Y:Lbl 1:Plot X,Y+1:Y≤0⇒Goto 1:0
+
+; Prog 2: Draws a 3 by 3 grid (tic tac toe board)
+-24→J:Lbl 1:Graph Y=J:J+5.9→J:J≤0⇒Goto 1:1→J:Lbl 2:Prog 1:J+6→J:J≤19⇒Goto 2:0
+
+; Prog 3: Gets user input and plots 'O' or 'X'
+Lbl 1:Plot:1000→J:Lbl 2:Dsz J:Goto 2:"WAIT"?→J:J≠0⇒Goto 1:Lbl 3:"POS"?→J:J<0⇒Goto 3:J>8⇒Goto 3:Prog 6:K≠1⇒Goto 3:Int(J÷3)→Y:4+6(J-3Y)→X:-3-6Y→Y:0
+
+; Prog 4: Plots 'X'
+Plot X+1,Y+1:Plot X,Y-2:Plot X-2,Y:Plot X,Y+2:Plot X+1,Y-1:0
+
+; Prog 5: Plots 'O'
+Plot X+1,Y+1:Plot X,Y-1:Plot X,Y-1:Plot X-1,Y:Plot X-1,Y:Plot X,Y+1:Plot X,Y+1:Plot X+1,Y:0
+
+; Prog 6: Checks if given position in board is already taken
+0→K:A[J]≠0⇒Goto 1:1→K:1→A[J]:Lbl 1:0
+
+; Total space in program memory: 385 / 400 bytes
