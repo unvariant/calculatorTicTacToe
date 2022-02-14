@@ -22,7 +22,7 @@ NOTE: this table is not exhaustive and only lists the symbols used in the tic ta
 |=, <, >, ≤, ≥, ≠ |G operator G⇒G   |if the expression G operator G evaluates to true, the third argument is evaluated |
 |Int              |Int G            |converts G into an integer                                   |
 |Prog I           |Prog I           |performs a subroutine call to the program I, where 0 ≤ I ≤ 9 |
-|?                |?→V              |prompts the user for input and restores the result in variable V |
-|Dsz              |Dsz V:G:G        |decrements variable V, if V is not zero evalutes the first expression, if V is zero evaluates the second expression |
+|?                |?→V              |prompts the user for input and restores the result in V      |
+|Dsz              |Dsz V:G:G        |decrements variable V, if V is not zero evalute the first expression, if V is zero evaluate the second expression |
 
 there are also basic arithmetic operators +, -, ×, ÷.
