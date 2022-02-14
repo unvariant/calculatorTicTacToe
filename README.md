@@ -2,7 +2,7 @@
 This is a tic tac toe game written for the Casio fx-6300 graphing calculator. It requires two player to play and is able to detect invalid input (e.g. a space that has already been taken or a space that does not exist), but is unable to tell if a player has won the game or not. It automatically ends tha game after 9 valid moves.
 
 # Formula Programming
-According to [http://www.rskey.org/fx6300g](http://www.rskey.org/fx6300g), the fx-6300 has a formula programming model (I have no idea what formula programming is).
+According to [http://www.rskey.org/fx6300g](http://www.rskey.org/fx6300g), the fx-6300 has a formula programming model (I have no idea what formula programming means).
 
 ## Basic Syntax
 I represents an integer<br>
