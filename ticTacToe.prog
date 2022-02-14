@@ -1,5 +1,5 @@
 ; lines that start with semicolons are comments and not a part of the actual program
-; tic tac toe program in calculator when split into different programs
+; tic tac toe program in calculator
 
 ; Prog 0: Main driver program
 9→J:Lbl 1:0→A[J-1]:Dsz J:Goto 1:9→M:0→S:Prog 2:Lbl 2:Prog 3:S=0⇒Goto 3:0→S:Prog 4:Goto 4:Lbl 3:1→S:Prog 5:Lbl 4:Dsz M:Goto 2:
