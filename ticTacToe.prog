@@ -1,3 +1,4 @@
+; lines that start with semicolons are comments and not a part of the actual program
 ; tic tac toe program in calculator when split into different programs
 
 ; Prog 0: Main driver program
