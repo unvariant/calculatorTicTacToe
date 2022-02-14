@@ -15,7 +15,7 @@ NOTE: this table is not exhaustive and only lists the symbols used in the tic ta
 | Symbol          | Usage           | Description                                                 |
 |:----------------|:----------------|:------------------------------------------------------------|
 |→                |G→V              |sets V to the value of G                                     |
-|Lbl              |Lbl I            |defines a label referred to by the number I, where 0 ≤ N ≤ 9 |
+|Lbl              |Lbl I            |defines a label referred to by the number I, where 0 ≤ I ≤ 9 |
 |Goto             |Goto I           |jumps to label I, where 0 ≤ I ≤ 9                            |
 |Graph Y=         |Graph Y=G        |graphs the equation Y=G                                      |
 |Plot             |Plot G,G         |plots the point G,G                                          |
